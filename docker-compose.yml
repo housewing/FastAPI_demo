@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  fastapi-container:
+    build: ./FastAPI
+    container_name: fastapi-container
+    restart: always
+    ports:
+      - 8000:8000
+    volumes:
+      - ./FastAPI:/app
+    command: uvicorn run:app --reload --host 0.0.0.0 --port 8000

@@ -1,0 +1,6 @@
+cryptography
+fastapi
+pyodbc
+pydantic
+uvicorn
+python-dotenv
